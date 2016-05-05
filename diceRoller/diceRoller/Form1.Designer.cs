@@ -48,7 +48,6 @@
             this.currentWinner = new System.Windows.Forms.TextBox();
             this.reset = new System.Windows.Forms.Button();
             this.result = new System.Windows.Forms.Label();
-            this.help = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -72,6 +71,7 @@
             // 
             // playerOneRollBox
             // 
+            this.playerOneRollBox.Enabled = false;
             this.playerOneRollBox.Location = new System.Drawing.Point(9, 36);
             this.playerOneRollBox.Name = "playerOneRollBox";
             this.playerOneRollBox.Size = new System.Drawing.Size(100, 20);
@@ -148,6 +148,7 @@
             // 
             // playerTwoRollBox
             // 
+            this.playerTwoRollBox.Enabled = false;
             this.playerTwoRollBox.Location = new System.Drawing.Point(9, 35);
             this.playerTwoRollBox.Name = "playerTwoRollBox";
             this.playerTwoRollBox.Size = new System.Drawing.Size(100, 20);
@@ -244,21 +245,11 @@
             this.result.Size = new System.Drawing.Size(190, 50);
             this.result.TabIndex = 5;
             // 
-            // help
-            // 
-            this.help.Location = new System.Drawing.Point(488, 215);
-            this.help.Name = "help";
-            this.help.Size = new System.Drawing.Size(75, 23);
-            this.help.TabIndex = 6;
-            this.help.Text = "Help";
-            this.help.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 314);
-            this.Controls.Add(this.help);
+            this.ClientSize = new System.Drawing.Size(584, 226);
             this.Controls.Add(this.result);
             this.Controls.Add(this.reset);
             this.Controls.Add(this.groupBox3);
@@ -299,7 +290,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox playerTwoRollBox;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button help;
     }
 }
 

@@ -31,7 +31,9 @@ namespace diceRoller
                 playerOneRollBox.Text = playerOne.CurrentRoll.ToString();
                 playerOneRolled = false;
                 playerTwoRolled = false;
-                if(playerOne.CurrentRoll > playerTwo.CurrentRoll)
+                rollPlayer1.Enabled = true;
+                rollPlayer2.Enabled = true;
+                if (playerOne.CurrentRoll > playerTwo.CurrentRoll)
                 {
                     playerOne.CurrentWins++;
                     playerTwo.CurrentLosses++;
@@ -74,6 +76,7 @@ namespace diceRoller
                 playerTwoRollBox.Text = "";
                 playerOneRollBox.Text = playerOne.CurrentRoll.ToString();
                 playerOneRolled = true;
+                rollPlayer1.Enabled = false;
             }
 
         }
@@ -86,6 +89,8 @@ namespace diceRoller
                 playerTwoRollBox.Text = playerTwo.CurrentRoll.ToString();
                 playerOneRolled = false;
                 playerTwoRolled = false;
+                rollPlayer1.Enabled = true;
+                rollPlayer2.Enabled = true;
                 if (playerOne.CurrentRoll > playerTwo.CurrentRoll)
                 {
                     playerOne.CurrentWins++;
@@ -129,6 +134,7 @@ namespace diceRoller
                 playerOneRollBox.Text = "";
                 playerTwoRollBox.Text = playerTwo.CurrentRoll.ToString();
                 playerTwoRolled = true;
+                rollPlayer2.Enabled = false;
             }
            
         }
